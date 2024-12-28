@@ -1,0 +1,153 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    margin: 0 auto;
+    width: 390px;
+    height: 780px;
+    background: #FFFFFF;
+}
+
+h1, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 213px;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/worldmap.png");
+    background-color: rgb(13, 24, 46);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -161px -21px;
+}
+
+header .parrot {
+    width: 94.88px;
+    height: 84.8px;
+}
+
+.header-text {
+    margin-left: 15.02px;
+}
+
+.header-text h1 {
+    color: rgb(50, 205, 50);
+    font-family: Big Shoulders Display;
+    font-size: 43.4191px;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.header-text p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12.21px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 362px;
+    height: 505px;
+    border: 4px solid #252F42;
+    border-radius: 15px;
+    margin: 30px auto;
+}
+
+.request-form,
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.request-form label,
+.result-container label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #035A9D;
+}
+
+textarea {
+    margin: 0 auto;
+    resize: none;
+    width: 317px;
+    height: 118px;
+    border-radius: 8px 0px 0px 0px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    padding: 10px 12px;
+    color: #333333;
+}
+
+.request-form textarea::placeholder {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #333333;
+}
+
+.request-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.request-form fieldset label {
+    align-self: baseline;
+    color: #333333;
+    margin: 0 0 5px 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.request-form fieldset label span {
+    line-height: 30px;
+    display: inline-flex;
+}
+
+
+
+button {
+    margin: 24px auto;
+    width: 322px;
+    height: 50px;
+    border-radius: 6px;
+    background: rgb(3, 90, 157);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
