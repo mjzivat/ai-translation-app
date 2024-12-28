@@ -12,9 +12,7 @@ export async function fetchTranslation({translationText, languageChoice}) {
         }
     ]
     try {
-        const openai = new OpenAI({
-            dangerouslyAllowBrowser: true
-        })
+        const openai = new OpenAI()
         const response = await openai.chat.completions.create({
             model: 'gpt-4',
             messages: messages
