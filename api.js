@@ -1,10 +1,5 @@
 import OpenAI from "openai"
 
-
-
-
-
-
 export async function fetchTranslation({translationText, languageChoice}) {
     const apiKey = process.env.REACT_APP_OPENAI_API_KEY
 
