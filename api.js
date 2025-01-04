@@ -6,6 +6,7 @@ import OpenAI from "openai"
 
 
 export async function fetchTranslation({translationText, languageChoice}) {
+    const apiKey = process.env.REACT_APP_OPENAI_API_KEY
 
     const messages = [
         {
@@ -19,7 +20,7 @@ export async function fetchTranslation({translationText, languageChoice}) {
     ]
     try {
         const openai = new OpenAI({
-            apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+            apiKey,
             dangerouslyAllowBrowser: true
         })
         const response = await openai.chat.completions.create({
