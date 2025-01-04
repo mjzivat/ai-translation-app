@@ -13,6 +13,15 @@ import
   TranslationResult, 
   {loader as translatedLoader, action as translatedAction} 
 from "./pages/TranslationResult"
+// import dotenv from 'dotenv'
+// import { dotenv.expand as dotenvExpand }  from 'dotenv-expand'
+
+
+// require('dotenv')
+
+
+// dotenv.config()
+
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>
@@ -29,6 +38,7 @@ const router = createBrowserRouter(createRoutesFromElements(
   />
   </Route>
 ))
+
 
 function App() {
   return (

@@ -28,7 +28,7 @@ export default function TranslationResult() {
                 disabled
                 value={resultData.userText}
             />
-            <label htmlFor="translation-text">Original text 👇</label>
+            <label htmlFor="translation-text">Your translation 👇</label>
             <textarea 
                 disabled
                 value={resultData.responseText}
