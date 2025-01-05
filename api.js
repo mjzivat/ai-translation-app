@@ -6,7 +6,7 @@ export async function fetchTranslation({translationText, languageChoice}) {
     const messages = [
         {
             role: "system",
-            content: "You are a polyglot/expert translator. The user will give you some text, in English, to translate and a language choice to translate the text to. You will return a translation from English to the chosen language."
+            content: "You are a polyglot/expert translator. The user will give you some text, in English, to translate and a language choice to translate the text to. You will translate the text from English to the language choice and return the translation. Example conversation - user: Please translate Hello to French. assistant: Bonjour."
         },
         {
             role: "user",
