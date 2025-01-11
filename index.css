@@ -153,3 +153,14 @@ button {
     letter-spacing: 0%;
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+
+    header {
+        width: 100vw;
+    }
+}
