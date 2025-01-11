@@ -1,5 +1,5 @@
 import frFlagImg from "../assets/fr-flag.png"
-import jpnFlagImg from "../assets/jpn-flag.png"
+import deFlagImg from "../assets/de-flag.png"
 import spFlagImg from "../assets/sp-flag.png"
 import React from "react"
 import {
@@ -68,13 +68,13 @@ export default function TranslationRequest() {
                         <input
                             type="radio"
                             name="language"
-                            id="japanese"
-                            value="japanese"
+                            id="german"
+                            value="german"
                         />
-                        <label htmlFor="japanese">
-                            Japanese
+                        <label htmlFor="german">
+                            German
                             <span>
-                                <img src={jpnFlagImg} alt="image of japanese flag" />
+                                <img src={deFlagImg} alt="image of japanese flag" />
                             </span>
                         </label>
                     </div>
